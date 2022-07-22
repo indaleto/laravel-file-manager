@@ -28,6 +28,6 @@ class ConfigACLRepository implements ACLRepository
      */
     public function getRules(): array
     {
-        return config('file-manager.aclRules')[1] ?? [];
+        return config('file-manager.aclRules') ?? [];
     }
 }
